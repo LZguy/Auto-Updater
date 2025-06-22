@@ -3,6 +3,6 @@
   "version": "1.0.0",
   "type": "module",
   "dependencies": {
-    "@sendgrid/mail": "^7.14.0"
+    "@sendgrid/mail": "^8.1.5"
   }
 }
