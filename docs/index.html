@@ -1,15 +1,65 @@
 <!DOCTYPE html>
-<html lang="he">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Auto-Updater</title>
+  <title>Auto-Updater – Home Edition</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      padding: 2em;
+      text-align: center;
+    }
+    .container {
+      background: #fff;
+      padding: 2em;
+      border-radius: 10px;
+      max-width: 600px;
+      margin: auto;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h1 {
+      color: #0078D7;
+      margin-bottom: 0.5em;
+    }
+    p {
+      font-size: 1.1em;
+      margin-bottom: 2em;
+    }
+    a.btn, input[type="submit"] {
+      display: inline-block;
+      padding: 1em 2em;
+      margin: 1em;
+      background: #28a745;
+      color: white;
+      text-decoration: none;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    input[type="submit"] {
+      background: #0070ba;
+    }
+  </style>
 </head>
 <body>
-  <h1>Auto-Updater – גרסת הבית</h1>
-  <p>עדכן אוטומטית את Windows, אפליקציות ודרייברים – בלחיצה אחת</p>
-  <a href="#download">הורד גרסת ניסיון (3 ימים)</a>
-  <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
-    <!-- טופס תשלום נכניס בהמשך -->
-  </form>
+  <div class="container">
+    <h1>Auto-Updater – Home Edition</h1>
+    <p>Automatically update Windows, apps, drivers, WSL, and more – in one click.</p>
+
+    <a class="btn" href="https://github.com/LZguy/Auto-Updater/releases/latest/download/Auto-Updater.zip" download>
+      Download 3-day Trial
+    </a>
+
+    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+      <input type="hidden" name="cmd" value="_xclick">
+      <input type="hidden" name="business" value="zinoyaffa@gmail.com">
+      <input type="hidden" name="item_name" value="Auto-Updater License">
+      <input type="hidden" name="amount" value="49.00">
+      <input type="hidden" name="currency_code" value="ILS">
+      <input type="submit" value="Buy Full Version – ₪49">
+    </form>
+  </div>
 </body>
 </html>
