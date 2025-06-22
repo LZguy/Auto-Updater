@@ -28,7 +28,7 @@ export async function handler(event) {
   // שולחים אימייל עם הקובץ כ-attachment
   await sgMail.send({
     to: email,
-    from: "noreply@auto-updater.com",
+    from: "ljinoo0@gmail.com",
     subject: "Your Auto-Updater license",
     text:
       "Place the attached license.json in C:\\ProgramData\\AutoUpdater\\",
