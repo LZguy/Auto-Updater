@@ -14,23 +14,42 @@
       background: #fff;
       padding: 2em;
       border-radius: 10px;
-      max-width: 600px;
+      max-width: 720px;
       margin: auto;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
     h1 {
       color: #0078D7;
-      margin-bottom: 0.5em;
+      margin-bottom: 0.2em;
     }
-    p {
-      font-size: 1.1em;
-      margin-bottom: 2em;
+    .tagline {
+      font-size: 1.15em;
+      margin-bottom: 1.6em;
     }
-    a.btn, input[type="submit"] {
+    ul.features {
+      list-style: none;
+      padding: 0;
+      text-align: left;
+      margin: 0 auto 2em;
+      max-width: 520px;
+    }
+    ul.features li {
+      margin: 0.4em 0;
+      padding-left: 1.2em;
+      position: relative;
+    }
+    ul.features li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #28a745;
+      font-weight: bold;
+    }
+    .btn, input[type="submit"] {
       display: inline-block;
       padding: 1em 2em;
       margin: 1em;
-      background: #28a745;
+      background: #0070ba;
       color: white;
       text-decoration: none;
       border: none;
@@ -38,28 +57,40 @@
       font-weight: bold;
       cursor: pointer;
     }
-    input[type="submit"] {
-      background: #0070ba;
+    .note {
+      font-size: 0.9em;
+      color: #555;
+      margin-top: 1.5em;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>Auto-Updater – Home Edition</h1>
-    <p>Automatically update Windows, apps, drivers, WSL, and more – in one click.</p>
+    <h1>Auto‑Updater – Home Edition</h1>
+    <p class="tagline">One‑click maintenance for Windows: system updates, apps, drivers, WSL and more.</p>
 
-    <a class="btn" href="https://github.com/LZguy/Auto-Updater/releases/latest/download/Auto-Updater.zip" download>
-      Download 3-day Trial
-    </a>
+    <ul class="features">
+      <li>Automates Windows Update, Winget and Chocolatey packages.</li>
+      <li>Refreshes Windows Defender signatures and scans.</li>
+      <li>Updates WSL distributions and reboots only if required.</li>
+      <li>Generates detailed logs so you stay in control.</li>
+      <li>One‑time payment – <strong>no subscription</strong>.</li>
+      <li>7‑day money‑back guarantee.</li>
+    </ul>
 
     <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
       <input type="hidden" name="cmd" value="_xclick">
       <input type="hidden" name="business" value="zinoyaffa@gmail.com">
-      <input type="hidden" name="item_name" value="Auto-Updater License">
+      <input type="hidden" name="item_name" value="Auto‑Updater License">
       <input type="hidden" name="amount" value="49.00">
       <input type="hidden" name="currency_code" value="ILS">
-      <input type="submit" value="Buy Full Version – ₪49">
+      <input type="submit" value="Buy Now – ₪49">
     </form>
+
+    <p class="note">
+      <a href="https://www.virustotal.com/gui/home/upload" target="_blank">Check on VirusTotal</a> ·
+      Need help? <a href="mailto:support@auto-updater.com">Contact support</a>
+    </p>
   </div>
 </body>
 </html>
